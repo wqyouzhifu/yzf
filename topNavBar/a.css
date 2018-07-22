@@ -1,6 +1,5 @@
 body {
-    background: black;
-    color: white;
+    background: #efefef;
     margin: 0;
   }
   a {
@@ -14,22 +13,29 @@ body {
   }
   
   .topNavBar {
-    padding: 20px 16px 20px 16px;
+    padding: 20px 0px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
   }
-  .topNavBar > nav {
+  .topNavBar  nav {
     padding-top: 7px;
   }
-  .topNavBar > nav > ul {
+  .topNavBar  nav > ul {
     list-style: none;
     margin: 0;
     padding: 0;
   }
-  .topNavBar > nav > ul > li {
+  .topNavBar-inner{
+    padding: 0px 16px;
+  }
+  .topNavBar  nav > ul > li {
     float: left;
     margin-left: 17px;
     margin-right: 17px;
   }
-  .topNavBar > nav > ul > li > a {
+  .topNavBar  nav > ul > li > a {
     font-size: 12px;
     color: #b7b7b7;
     font-weight: bold;
@@ -39,7 +45,7 @@ body {
     padding-bottom: 5px;
     display: block;
   }
-  .topNavBar > nav > ul > li > a:hover {
+  .topNavBar  nav > ul > li > a:hover {
     border-bottom: 3px solid #e06567;
   }
   
@@ -55,4 +61,36 @@ body {
   }
   .topNavBar .logo .card {
     color: #9a9da2;
+  }
+  .banner{
+    height: 515px;
+    background-position: center center;
+    background-size: cover;
+  }
+  .mask{
+    height: 515px;
+    background-color: rgba(0,0,0,0.8);
+  }
+  .userCard{
+    border: 1px solid red;
+    max-width: 940px;
+    margin: auto;
+    background-color: #ffffff;
+  }
+  .userCard .welcome{
+    color: white;
+    background: #E6686A;
+    display:inline-block;
+    padding: 5px 15px;
+    position: relative;
+  }
+  .userCard .welcome .triangle{
+    display: block;
+    border:10px solid transparent;
+    width:0px;
+    border-left-color:#E6686A;
+    border-top-width:0px;
+    position: absolute;
+    left: 10px;
+    top: 100%;
   }
