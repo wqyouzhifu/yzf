@@ -11,7 +11,16 @@ body {
     display: block;
     clear: both;
   }
-  
+ *{
+    margin: 0px;
+    padding: 0px;
+  }
+  .userCard hr{
+    height: 0px;
+    border: none;
+    border-bottom: 1px solid rosybrown;
+    margin: 5px 0px;
+  }
   .topNavBar {
     padding: 20px 0px;
     position: fixed;
@@ -72,7 +81,6 @@ body {
     background-color: rgba(0,0,0,0.8);
   }
   .userCard{
-    border: 1px solid red;
     max-width: 940px;
     margin: auto;
     background-color: #ffffff;
@@ -83,6 +91,7 @@ body {
     display:inline-block;
     padding: 5px 15px;
     position: relative;
+    margin-bottom: 16px;
   }
   .userCard .welcome .triangle{
     display: block;
@@ -94,3 +103,49 @@ body {
     left: 10px;
     top: 100%;
   }
+  .pictureAndText{
+    padding: 50px;
+  }
+  .text h1{
+    margin-top: 18px;
+  }
+  .picture{
+    float: left;
+    margin-right: 65px;
+  }
+  .text{
+    float: left;
+    width: 470px;
+  }
+  .text dl>dt,dd{
+    float: left;
+    margin: 8px 0px;
+  }
+  .text dl>dt{
+    width: 30%;
+    font-weight: bold;
+  }
+  .text dl>dd{
+    width: 70%;
+    color: #9da0a7;
+  }
+  .userCard .media{
+  background-color: #E6686A;
+  text-align: center;
+}
+.userCard .media a{
+  margin: 16px;
+  display: inline-block;
+  border-radius: 50%;
+  width: 40px;
+  padding: 5px 0px;
+}
+.userCard .media a:hover{
+  background:#CF5D5F;
+}
+.userCard .media a img{
+  fill: white;
+  vertical-align: top;
+  width: 30px;
+  height: 30px;
+}
