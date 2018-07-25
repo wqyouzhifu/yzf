@@ -15,6 +15,12 @@ body {
     margin: 0px;
     padding: 0px;
   }
+  h1,h2,h3,h4,h5,h6{
+    font-weight: normal;
+  }
+  ul,ol{
+    list-style-type: none;
+  }
   .userCard hr{
     height: 0px;
     border: none;
@@ -84,6 +90,8 @@ body {
     max-width: 940px;
     margin: auto;
     background-color: #ffffff;
+    margin-top: -390px;
+    box-shadow: 0px 1px 10px -1px rgba(28,23,28,0.74);
   }
   .userCard .welcome{
     color: white;
@@ -148,4 +156,71 @@ body {
   vertical-align: top;
   width: 30px;
   height: 30px;
+}
+main>p .downloadtext{
+  line-height: 16px;
+  display: inline-block;
+  padding: 21px 55px;
+  border: 1px solid #cdcfd1;
+  font-size: 14px;
+  background: #efefef;
+  border-radius: 2px;
+  font-weight: bold;
+  color: #3d4451;
+  margin: 32px 0px;
+}
+main>p.downloadtext-wraper{
+  text-align: center;
+}
+main>p .downloadtext:hover{
+box-shadow: 0px 4px 10px 0px rgba(28,23,28,0.34);
+transition: box-shadow 0.3s
+}
+main>p.introduce{
+  text-align: center;
+  line-height: 25px;
+}
+section.skills{
+  max-width: 940px;
+  margin: 0px auto;
+  margin-top: 60px;;
+  
+}
+section>h2{
+  text-align: center;
+  color: #3d4451;
+  font-size: 34px;
+  line-height: 1.2;
+  font-weight: 600;
+}
+section.skills h3 {
+  font-size: 14px;
+  line-height: 1.1;
+  padding-right: 40px;
+}
+section.skills ol{
+  margin-top: 30px;
+  background: white;
+  padding: 44px 50px 10px;
+  box-shadow: 0px 1px 10px -1px rgba(28,23,28,0.74);
+}
+section.skills ol li{
+  float: left;
+  width: 48%;
+  box-sizing: border-box;
+}
+section.skills ol li:nth-child(even){
+  float: right;
+}
+.skills .ProgressBar{
+  background: #fae1e1;
+  height: 5px;
+  margin: 6px 0 40px;
+  border-radius: 2px;
+}
+.skills .ProgressBar>.Progress{
+  width: 70%;
+  background: #E6686A;
+  height: 100%;
+  border-radius: 2px;
 }
