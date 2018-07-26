@@ -125,7 +125,7 @@ body {
     float: left;
     width: 470px;
   }
-  .text dl>dt,dd{
+  .text dl dt,dd{
     float: left;
     margin: 8px 0px;
   }
