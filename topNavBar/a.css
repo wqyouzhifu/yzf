@@ -137,8 +137,9 @@ body {
     font-weight: bold;
   }
   .text dl>dd{
-    width: 69%;
+    width: 70%;
     color: #9da0a7;
+    margin-left: 0px;
   }
   .userCard .media{
   background-color: #E6686A;
