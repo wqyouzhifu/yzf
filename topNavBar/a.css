@@ -132,12 +132,12 @@ body {
   .text dl>dt{
     width: 30%;
     font-weight: bold;
-    line-height: 18px;
+    border: 1px solid red;
   }
   .text dl>dd{
     width: 70%;
     color: #9da0a7;
-    line-height: 18px;
+    border: 1px solid red;
   }
   .userCard .media{
   background-color: #E6686A;
