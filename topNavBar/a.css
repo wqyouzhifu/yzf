@@ -182,7 +182,9 @@ main>p.introduce{
   text-align: center;
   line-height: 25px;
 }
-section.skills{
+section.skills,
+section.works
+{
   max-width: 940px;
   margin: 0px auto;
   margin-top: 60px;;
@@ -226,4 +228,62 @@ section.skills ol li:nth-child(even){
   height: 100%;
   border-radius: 2px;
 }
-div{}
+.works nav{
+  text-align: center;
+}
+.works nav ol{
+  display: inline-block;
+  vertical-align: top;
+}
+.works ol li{
+  float: left;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.works ol li:nth-child(1){
+  margin-left: 0px;
+}
+.works{
+  text-align: center;
+}
+.works nav {
+  display: inline-block;
+  margin-top: 32px;
+  vertical-align: top;
+  margin-bottom: 50px;
+}
+.works nav .bar{
+  background: white;
+  height: 5px;
+  margin-top: 5px;
+
+  border-radius: 2px;
+}
+.works nav .bar .banner-inner{
+  background: red;
+  height: 100%;
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+.works nav .bar.state-1 .banner-inner{
+  margin-left: 0px;
+  width: 36px;
+}
+.works nav .bar.state-2 .banner-inner{
+  margin-left: 54px;
+  width: 44px;
+}
+.works nav .bar.state-3 .banner-inner{
+  margin-left: 106px;
+  width: 88px;
+}
+.works .jobs{
+  position: relative;
+}
+.works .jobs .big{
+  position:absolute;
+}
+.works .jobs .small{
+  position:absolute;
+}
+
