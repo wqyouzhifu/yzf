@@ -264,6 +264,7 @@ section.skills ol li:nth-child(even){
   height: 100%;
   border-radius: 2px;
   transition: all 0.3s;
+
 }
 .works nav .bar.state-1 .banner-inner{
   margin-left: 0px;
