@@ -1,0 +1,27 @@
+kbd{
+    width: 2em;
+    height: 2em;
+    border: 1px solid red;
+    display: inline-block;
+    text-transform: uppercase;
+    vertical-align: top;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+main{
+    text-align: center;
+}
+#m{
+    display: inline-block;
+    
+}
+#m>div:nth-child(2){
+    margin-left: 1em;
+}
+#m>div:nth-child(3){
+    margin-left: 2em;
+}
+

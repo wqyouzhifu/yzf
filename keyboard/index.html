@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>我的键盘</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <header></header>
+    <main >
+        <div id="m" class="wapper">
+
+        </div>
+    </main>
+    <footer></footer>
+    <script>
+        var keys={
+            "0":["q","w","e","r","t","y","u","i","o","p"],
+            "1":["a","s","d","f","g","h","j","k","l"],
+            "2":["z","x","c","v","b","n","m"],
+            "length":3
+        }
+        var hash={
+            q:"qq.com",
+            w:"qq.com",
+            e:"qq.com",
+            r:"qq.com",
+            t:"qq.com",
+            a:"qq.com",
+            d:"qq.com",
+            z:"qq.com",
+            x:"qq.com",
+            c:"qq.com",
+            v:"qq.com",
+            g:"qq.com"
+        }
+
+        var index=0;
+        while(index<keys["length"]){
+            console.log(111);
+            var div1=document.createElement("div");
+            m.appendChild(div1);
+            var sz=keys[index]//qwertyuiop 10
+            console.log(sz);
+            var index2=0;
+            while(index2<sz.length){
+                var kb=document.createElement("kbd");
+                kb.textContent=sz[index2];
+                div1.appendChild(kb);
+                index2+=1;
+            };
+
+            index+=1;
+        };
+    </script>
+</body>
+</html>
