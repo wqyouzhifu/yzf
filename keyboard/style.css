@@ -1,15 +1,21 @@
 kbd{
-    width: 2em;
-    height: 2em;
+    width: 4em;
+    height: 4em;
     border: 1px solid red;
     display: inline-block;
     text-transform: uppercase;
     vertical-align: top;
+    position: relative;
 }
 
 *{
     margin: 0px;
     padding: 0px;
+}
+#m>div>kbd>button{
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
 }
 main{
     text-align: center;
@@ -22,6 +28,6 @@ main{
     margin-left: 1em;
 }
 #m>div:nth-child(3){
-    margin-left: 2em;
+    margin-left: 4em;
 }
 

@@ -36,23 +36,46 @@
             v:"qq.com",
             g:"qq.com"
         }
-
+        //取出新的hash值
+        hashLocalStorage=JSON.parse(localStorage.getItem("uuu")||"");
+        if(hashLocalStorage){
+            hash=hashLocalStorage;
+        }
         var index=0;
         while(index<keys["length"]){
-            console.log(111);
+            //console.log(111);
             var div1=document.createElement("div");
             m.appendChild(div1);
             var sz=keys[index]//qwertyuiop 10
-            console.log(sz);
+            //console.log(sz);
             var index2=0;
             while(index2<sz.length){
                 var kb=document.createElement("kbd");
                 kb.textContent=sz[index2];
                 div1.appendChild(kb);
+                buttonxx=document.createElement("button");
+                kb.appendChild(buttonxx);
+                buttonxx.textContent="E";
+                buttonxx.id=sz[index2];
+                buttonxx.onclick=function(xzcx){
+                    key=xzcx.target.id
+                    x=prompt("给我一个网址")
+                    hash[key]=x;//hash变更了
+                    localStorage.setItem("uuu",JSON.stringify(hash))
+                }
                 index2+=1;
             };
 
             index+=1;
+        };
+        //键盘监听事件,绑定键盘事件
+        document.onkeypress=function(xzcxv){
+            console.log(xzcxv);
+            k=xzcxv["key"];
+            website=hash[k]
+            // 当前页面打开，就是获取location对象
+            // location.href="http://"+website
+            window.open("http://"+website,"_blank");
         };
     </script>
 </body>
